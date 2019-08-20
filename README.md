@@ -10,3 +10,5 @@ This server is written in C and can hold up to 32 TCP clients, allocating a thre
 ## Netcat
 
 You may also use netcat to connect and communicate with the server. Remember to follow the message guidelines.
+* TCP connection: ```netcat PORT_NUMBER```
+* UDP connection: ```netcat -u PORT_NUMBER```
