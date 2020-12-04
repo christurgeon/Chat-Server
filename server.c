@@ -19,21 +19,6 @@ char** users;         // Global array of userids
 int* global_sockfds;  // Global array of socket fds
 int client_count = 0; // Number of connected TCP clients
 
-/*
-
-TEST 9
-I wasn't sending "ERROR Invalid msglen" and a few
-other error messages. Another possible issue is the message in send
-and broadcast on tcp might not come in right away and might need
-multiple recvfrom calls as you are only guaranteed the first
-message up to the first \n
-
-Yes. Please also double-check for all possible conditions
- that you need to throw error messages. Failure of detecting
- illegal commands could cause your program to stall.
-
-
-*/
 
 // =============================================================================
 // ============================= HELPER METHODS ================================
